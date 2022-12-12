@@ -125,3 +125,8 @@ body {
         background-color: #1FAEEF;
         color: white;
       }
+
+      .option.active {
+        background-color: #1FAEEF;
+        color: white;
+      }
