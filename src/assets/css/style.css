@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.select-container {
+  width: 400px;
+  margin: 1em auto;
+}
+
+  .select-label {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .select {
+    width: 470px;
+    position: relative;
+    
+  }
+
+    .select-option {
+      width: 470px;
+      height: 38px;
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border: 1px solid #DEDEDF;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+    }
+
+      .select-value {
+        padding-left: 12.53px;
+        padding-top: 12.5px;
+        padding-bottom: 10.5px;
+        font-size: 12px;
+        color: #1E1E1E;
+      }
+
+      .icon {
+        padding-top: 18.22px;
+        padding-bottom: 16.22px;
+        padding-right: 14.19px;
+        font-size: 10px;
+      }
+    
+    .options {
+      position: absolute;
+      background-color: white;
+      padding-top: 12.53px;
+      padding-bottom: 12.53px;
+      width: 100%;
+      height: 122px;
+      margin-top: 5px;
+      box-shadow: 0px 3px 11px #00000029;
+      border: 1px solid #E2E2E2;
+      overflow-y: scroll;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+}
+
+    .options::-webkit-scrollbar {
+      width: 6px;
+      height: 6px !important;
+    }
+  
+    /* Estilos barra (thumb) de scroll */
+    .options::-webkit-scrollbar-thumb {
+      background: #124884;
+      border-radius: 6px;
+      height: 5px !important;
+    }
+  
+    .options::-webkit-scrollbar-thumb:active {
+      background-color: #999999;
+    }
+  
+    .options::-webkit-scrollbar-thumb:hover {
+      background: #124884;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Estilos track de scroll */
+    .options::-webkit-scrollbar-track {
+      background: #f2f2f2;
+    }
+  
+    .options::-webkit-scrollbar-track:hover,
+    .options::-webkit-scrollbar-track:active {
+      background: #f2f2f2;
+    }
+
+    .options[data-toggle="collapsed"] {
+      display: none;
+    }
+
+      .option {
+        /* border-bottom: 1px solid #ccc; */
+        padding-left: 12.53px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #464A53;
+      }
+
+      .option:hover {
+        background-color: #1FAEEF;
+        color: white;
+      }
